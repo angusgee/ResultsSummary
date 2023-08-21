@@ -1,13 +1,32 @@
+/* CSS RESET */
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
 }
+
 img,
 svg {
   display: block;
   max-width: 100%;
+}
+
+/* VARIABLES */
+:root {
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+}
+
+/* UTILITY CLASSES */
+
+.gradient-light-blue {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
