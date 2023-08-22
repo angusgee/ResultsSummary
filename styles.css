@@ -71,7 +71,7 @@ svg {
   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
-/* GENERAL CLASSES */
+/* GENERAL STYLES */
 
 body {
   font-family: var(--ff-default);
@@ -105,4 +105,15 @@ body {
 .button:hover,
 .button:focus-visible {
   background: var(--gradient-primary);
+}
+
+.results-summary {
+  max-width: 46rem;
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  .results-summary {
+    grid-template-columns: 1fr 1fr;
+  }
 }
