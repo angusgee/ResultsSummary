@@ -119,3 +119,8 @@ body {
     box-shadow: 0.5rem 1rem 3rem hsl(224, 30%, 27%, 0.2);
   }
 }
+
+.results {
+  background: var(--gradient-primary);
+  text-align: center;
+}
