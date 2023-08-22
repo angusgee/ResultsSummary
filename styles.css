@@ -29,6 +29,7 @@ svg {
 /* VARIABLES */
 
 :root {
+  /* to-do: refactor variables and gradients */
   --clr-primary: hsl(262, 100%, 67%);
   --clr-secondary: hsl(241, 81%, 54%);
   --clr-red: hsl(0, 100%, 67%);
@@ -60,8 +61,6 @@ svg {
   --fs-800: 2rem;
   --fs-900: 5rem;
 }
-
-/* UTILITY CLASSES */
 
 .gradient-light-blue {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -111,6 +110,7 @@ body {
   max-width: 46rem;
   display: grid;
   --border-radius: 2rem;
+  --padding: 2.5rem;
 }
 
 @media (min-width: 600px) {
@@ -125,5 +125,11 @@ body {
   background: var(--gradient-primary);
   text-align: center;
   color: hsl(0, 0%, 100%, 0.7);
-  border-radius: var(--border-radius);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+@media (min-width: 600px) {
+  .results {
+    border-radius: var(--border-radius);
+  }
 }
