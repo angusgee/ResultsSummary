@@ -110,12 +110,13 @@ body {
 .results-summary {
   max-width: 46rem;
   display: grid;
+  --border-radius: 2rem;
 }
 
 @media (min-width: 600px) {
   .results-summary {
     grid-template-columns: 1fr 1fr;
-    border-radius: 2rem;
+    border-radius: var(--border-radius);
     box-shadow: 0.5rem 1rem 3rem hsl(224, 30%, 27%, 0.2);
   }
 }
@@ -123,4 +124,6 @@ body {
 .results {
   background: var(--gradient-primary);
   text-align: center;
+  color: hsl(0, 0%, 100%, 0.7);
+  border-radius: var(--border-radius);
 }
