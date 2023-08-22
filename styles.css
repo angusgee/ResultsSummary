@@ -144,14 +144,31 @@ body {
   }
 }
 
+.results,
 .summary {
   padding: var(--padding);
 }
 
 .result-score {
+  display: grid;
+  place-content: center;
   width: 12rem;
   margin-inline: auto;
   background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+}
+
+.result-score span {
+  display: block;
+  line-height: 1;
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+}
+
+.result-rank {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
 }
