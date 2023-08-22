@@ -29,6 +29,8 @@ svg {
 /* VARIABLES */
 
 :root {
+  --clr-primary: hsl(262, 100%, 67%);
+  --clr-secondary: hsl(241, 81%, 54%);
   --clr-red: hsl(0, 100%, 67%);
   --clr-yellow: hsl(39, 100%, 56%);
   --clr-green: hsl(166, 100%, 37%);
@@ -41,12 +43,15 @@ svg {
   --clr-yellow-bg: hsla(var(--clr-yellow), 0.1);
   --clr-green-bg: hsla(var(--clr-green), 0.1);
   --clr-blue-bg: hsla(var(--clr-blue), 0.1);
+  --clr-dark-blue-bg: hsla(var(--clr-dark-gray-blue), 0.1);
+
+  --gradient-primary: linear-gradient(var(--clr-primary), var(--clr-secondary));
 
   --ff-default: "HankenGrotesk";
 
   --fw-regular: 500;
-  --fw-regular: 700;
-  --fw-regular: 800;
+  --fw-medium: 700;
+  --fw-bold: 800;
 
   --fs-400: 1.125rem;
   --fs-500: 1.25rem;
@@ -80,4 +85,24 @@ body {
     display: grid;
     place-items: center;
   }
+}
+
+.section-title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-600);
+}
+
+.button {
+  color: var(--clr-white);
+  line-height: 1;
+  background: var(--clr-dark-gray-blue);
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--gradient-primary);
 }
