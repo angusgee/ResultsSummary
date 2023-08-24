@@ -4,16 +4,9 @@ Results summary component that displays an average of a user's test results acro
 
 ## Screenshots
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="flex: 0 0 48%; margin-right: 2%;">
-    ### Desktop view
-    ![](./assets/images/screenshot.png)
-  </div>
-  <div style="flex: 0 0 48%;">
-    ### Mobile view
-    <img src="./assets/images/screenshot-mob.png" alt="Mobile view" style="max-width: 100%; height: auto;">
-  </div>
-</div>
+|            Desktop view             |                        Mobile view                         |
+| :---------------------------------: | :--------------------------------------------------------: |
+| ![](./assets/images/screenshot.png) | <img src="./assets/images/screenshot-mob.png" width="300"> |
 
 ## Features and Technologies
 
