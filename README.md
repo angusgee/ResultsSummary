@@ -6,11 +6,11 @@ Results summary component that displays an average of a user's test results acro
 
 ### Desktop view
 
-![](./images/screenshot.)
+![](./assets/images/screenshot.)
 
 ### Mobile view
 
-![](./images/screenshot-mob.)
+![](./assets/images/screenshot-mob.)
 
 ## Features and Technologies
 
