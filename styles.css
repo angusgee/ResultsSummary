@@ -29,26 +29,6 @@ svg {
 /* VARIABLES */
 
 :root {
-  --clr-primary-hsl-400: 252, 100%, 67%;
-  --clr-primary-hsl-500: 256, 72%, 46%;
-  --clr-secondary-hsl-400: 241, 81%, 54%;
-  --clr-secondary-hsl-500: 241, 72%, 46%;
-
-  --clr-neutral-hsl-100: 0, 0%, 100%;
-  --clr-neutral-hsl-200: 221, 100%, 96%;
-  --clr-neutral-hsl-300: 241, 100%, 89%;
-  --clr-neutral-hsl-700: 224, 30%, 27%;
-
-  --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
-  --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
-  --clr-neutral-300: hsl(var(--clr-neutral-hsl-300));
-  --clr-neutral-700: hsl(var(--clr-neutral-hsl-700));
-
-  --clr-primary-400: hsl(var(--clr-primary-hsl-400));
-  --clr-primary-500: hsla(var(--clr-primary-hsl-500));
-  --clr-secondary-400: hsl(var(--clr-secondary-hsl-400));
-
-  /* to-do: refactor variables and gradients */
   --clr-primary: hsl(262, 100%, 67%);
   --clr-secondary: hsl(241, 81%, 54%);
   --clr-red: hsl(0, 100%, 67%);
