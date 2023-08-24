@@ -13,10 +13,11 @@ function initialize(data) {
   const summaryItems = document.querySelectorAll(".summary-item");
 
   data.forEach((item, index) => {
-    // Update icon
-    summaryItems[index].querySelector(
-      "svg"
-    ).outerHTML = `<img src="${item.icon}" alt="${item.category} icon" />`;
+    // Create new Image element and set the src attribute programmatically to prevent XSS
+    const imgElement = new Image();
+    imgElement.src = item.icon;
+    imgElement.alt = `${item.category} icon`;
+    summaryItems[index].querySelector("svg").replaceWith(imgElement);
 
     // Update title
     summaryItems[index].querySelector(".summary-item-title").textContent =
