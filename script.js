@@ -1,18 +1,31 @@
 "use strict";
 
-const scoreSelectors = ["accent-1", "accent-2", "accent-3", "accent-4"];
+fetch("./data.json")
+  .then((response) => response.json())
+  .then((data) => initialize(data));
 
-const scoresArray = scoreSelectors.map((type) =>
-  parseInt(
-    document.querySelector(`.summary-item[data-item-type="${type}"] span`)
-      .textContent
-  )
-);
+function initialize(data) {
+  const totalScore = data.reduce((sum, item) => sum + item.score, 0);
+  const avg = Math.round(totalScore / data.length);
 
-const total = scoresArray.reduce((sum, score) => sum + score, 0);
+  document.querySelector(".result-score span").textContent = avg;
 
-const avg = Math.round(total / scoresArray.length);
+  const summaryItems = document.querySelectorAll(".summary-item");
 
-console.log(avg);
+  data.forEach((item, index) => {
+    // Update icon
+    summaryItems[index].querySelector(
+      "svg"
+    ).outerHTML = `<img src="${item.icon}" alt="${item.category} icon" />`;
 
-document.querySelector(".result-score span").textContent = avg.toString();
+    // Update title
+    summaryItems[index].querySelector(".summary-item-title").textContent =
+      item.category;
+
+    // Update score
+    summaryItems[index].querySelector(".summary-score span").textContent =
+      item.score;
+  });
+
+  console.log(avg);
+}
