@@ -9,14 +9,10 @@ const scoresArray = scoreSelectors.map((type) =>
   )
 );
 
-console.log(scoresArray);
+const total = scoresArray.reduce((sum, score) => sum + score, 0);
 
-const score = document.querySelector(".result-score span");
+const avg = Math.round(total / scoresArray.length);
 
-let total = 0;
-for (let i = 0; i < scoresArray.length; i++) {
-  total += scoresArray[i];
-}
-const avg = parseInt(total / scoresArray.length);
+console.log(avg);
 
-score.textContent = avg.toString();
+document.querySelector(".result-score span").textContent = avg.toString();
