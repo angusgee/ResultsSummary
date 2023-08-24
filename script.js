@@ -37,6 +37,3 @@ for (let i = 0; i < scoresArray.length; i++) {
 const avg = parseInt(total / scoresArray.length);
 
 score.textContent = avg.toString();
-
-// console.log(scoresArray);
-// console.log(reactionScore);
