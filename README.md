@@ -2,6 +2,8 @@
 
 Results summary component that displays an average of a user's test results across various categories.
 
+- Live Site URL: [click here](https://angusgee.github.io/results-summary/)
+
 ## Screenshots
 
 |            Desktop view             |                        Mobile view                         |
